@@ -1,0 +1,89 @@
+<div class="main-container">
+  
+  <mat-toolbar ng-sticky [offSet]="0" [addClass]="'is-sticky'" class="topbar telative mat-toolbar mat-primary mat-toolbar-single-row"  color="primary" style="flex-direction: row; box-sizing: border-box; display: flex;">
+      <div class="navbar-header" >
+        <a class="navbar-brand" routerLink="/">
+          <b><img alt="homepage" class="dark-logo" src="assets/img/logo-light-icon.png">
+        <img alt="homepage" class="light-logo" src="assets/img/logo-light-icon.png"></b>
+        <span fxHide.xs>
+          <img alt="homepage" class="dark-logo" src="assets/img/logo-light-text.png">
+          <img alt="homepage" class="light-logo" src="assets/img/logo-light-text.png">
+        </span>
+        </a>
+        </div>
+      <button mat-icon-button="" value="sidebarclosed" class="mat-icon-button">
+         <span fxShow.lg class="mat-button-wrapper" (click)="toggleSidevar()">
+            <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">
+              menu
+            </mat-icon>
+          </span>
+      
+         <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+         <div class="mat-button-focus-overlay"></div>
+      </button>
+      <button class="srh-btn mat-icon-button"  mat-icon-button="">
+         <span class="mat-button-wrapper" (click)="ShowForm()">
+            <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">search</mat-icon>
+         </span>
+         <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+         <div class="mat-button-focus-overlay"></div>
+      </button>
+  
+            <form class="app-search ng-untouched ng-pristine ng-valid" *ngIf="form" novalidate="">
+              <input class="form-control" placeholder="Search &amp; enter" type="text">
+              <a (click)="ShowForm()" class="cl-srh-btn"><mat-icon>clear</mat-icon></a>
+            </form>
+   
+     
+     
+      
+
+      <span fxflex="" style="flex: 1 1 1e-09px; box-sizing: border-box;"></span>
+      
+      <app-header></app-header> 
+
+      
+
+      <button class="ml-xs overflow-visible mat-icon-button" mat-icon-button="">
+         <span class="mat-button-wrapper" (click)="toggleDrawer()">
+            <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">settings</mat-icon>
+         </span>
+         <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+         <div class="mat-button-focus-overlay"></div>
+      </button>
+
+     
+      
+      
+   </mat-toolbar>
+
+
+   <mat-sidenav-container class="example-sidenav-container mat-drawer-container mat-sidenav-container mat-drawer-transition" style="margin-top: 0px;">
+
+      <mat-sidenav #sidenav *ngIf="showSideNav" position="start" mode="side" [opened]="showSideNav" (closed)="events.push('close!')">
+          
+          <app-sidebar></app-sidebar>
+      </mat-sidenav>
+
+      <mat-sidenav #sidenav *ngIf="!showSideNav" position="start" mode="over" (closed)="events.push('close!')"> 
+          
+          <app-sidebar></app-sidebar>
+      </mat-sidenav>
+
+     
+        <mat-sidenav-content>
+         
+            <app-content></app-content> 
+            <mat-drawer  #drawer position="end" mode="over">
+                <app-settingbar></app-settingbar>
+              </mat-drawer>
+        </mat-sidenav-content>
+         
+        
+
+
+    
+   
+  </mat-sidenav-container>
+</div>
+

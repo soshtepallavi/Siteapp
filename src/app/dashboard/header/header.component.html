@@ -1,0 +1,183 @@
+
+
+
+<!-- notifications -->
+<button aria-haspopup="true" class="m-r-10 mat-icon-button" [matMenuTriggerFor]="menu" mat-icon-button="">
+    <span class="mat-button-wrapper" >
+      <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">message</mat-icon>
+      <div class="notify">
+        <span class="heartbit"></span>
+        <span class="point"></span>
+      </div>
+    </span>  
+  </button>
+ 
+<mat-menu #menu="matMenu" [overlapTrigger]="false" >
+        <div class="mat-menu-content" >
+            <div class="mailbox">
+                    <ul>
+                      <li>
+                        <div class="drop-title">Notifications</div>
+                      </li>
+                      <li>
+                        <div class="message-center">
+                  
+                            <div style="position: static;" class="ps ps--active-y">
+                              <div class="ps-content">
+                              
+                                <a href="#" class="ng-star-inserted">
+                                  <div class="round round-danger">
+                                      <i class="fa fa-link icon" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="mail-content">
+                                    <h5>Launch Admin</h5>
+                                    <span class="mail-desc">Just see the my new admin!</span>
+                                    <span class="time">9:30 AM</span>
+                                  </div>
+                                </a>
+                                <a href="#" class="ng-star-inserted">
+                                  <div class="round round-success">
+                                      <mat-icon class="icon">calendar_today</mat-icon>
+                                  </div>
+                                  <div class="mail-content">
+                                    <h5>Event today</h5>
+                                    <span class="mail-desc">Just a reminder that you have event</span>
+                                    <span class="time">9:10 AM</span>
+                                  </div>
+                                </a>
+                                <a href="#" class="ng-star-inserted">
+                                  <div class="round round-info">
+                                      <mat-icon class="icon">settings</mat-icon>
+                                  </div>
+                                  <div class="mail-content">
+                                    <h5>Settings</h5>
+                                    <span class="mail-desc">You can customize this template as you want</span>
+                                    <span class="time">9:08 AM</span>
+                                  </div>
+                                </a>
+                                <a href="#" class="ng-star-inserted">
+                                  <div class="round round-primary">
+                                      <i class="fa fa-user icon" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="mail-content">
+                                    <h5>Pawan kumar</h5>
+                                    <span class="mail-desc">Just see the my admin!</span>
+                                    <span class="time">9:00 AM</span>
+                                  </div>
+                                </a>
+                              </div>
+                          </div>
+                        </div>
+                      </li>           
+                    </ul>
+                  </div>                                
+                </div> 
+        </mat-menu>
+        
+ 
+     <!-- message -->
+     <button aria-haspopup="true" class="m-r-10 mat-icon-button" [matMenuTriggerFor]="menu1" mat-icon-button="">
+        <span class="mat-button-wrapper">
+           <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">email</mat-icon>
+           <div class="notify">
+             <span class="heartbit"></span>
+             <span class="point"></span>
+            </div>
+        </span>    
+     </button>
+          <mat-menu #menu1="matMenu" [overlapTrigger]="false" >
+            <div class="mat-menu-content">
+              <div class="mailbox">
+              <ul>
+                  <li>
+                    <div class="drop-title">You have 4 new Mymessages</div>
+                  </li>
+                  <li>
+                    <div class="message-center">
+                    <div style="position: static;" class="ps ps--active-y">
+                    <div class="ps-content">
+                                        <a href="#" class="ng-star-inserted">
+                                          <div class="user-img">
+                                            <img alt="user" class="img-circle" width="40" src="assets/img/users/1.jpg">
+                                            <span class="profile-status online pull-right"></span>
+                                          </div>
+                                          <div class="mail-content">
+                                            <h5>Pawan kumar</h5>
+                                            <span class="mail-desc">Just see the my admin!</span>
+                                            <span class="time">9:30 AM</span>
+                                          </div>
+                                        </a>
+                                        <a href="#" class="ng-star-inserted">
+                                          <div class="user-img">
+                                            <img alt="user" class="img-circle" width="40" src="assets/img/users/2.jpg">
+                                            <span class="profile-status busy pull-right"></span>
+                                          </div>
+                                          <div class="mail-content">
+                                            <h5>Sonu Nigam</h5>
+                                            <span class="mail-desc">I have sung a song! See you at</span>
+                                            <span class="time">9:10 AM</span>
+                                          </div>
+                                        </a>
+                                        <a href="#" class="ng-star-inserted">
+                                          <div class="user-img">
+                                            <img alt="user" class="img-circle" width="40" src="assets/img/users/2.jpg">
+                                            <span class="profile-status away pull-right"></span>
+                                          </div>
+                                          <div class="mail-content">
+                                            <h5>Arijit Sinh</h5>
+                                            <span class="mail-desc">I am a singer!</span>
+                                            <span class="time">9:08 AM</span>
+                                          </div>
+                                        </a>
+                                        <a href="#" class="ng-star-inserted">
+                                          <div class="user-img">
+                                            <img alt="user" class="img-circle" width="40" src="assets/img/users/3.jpg">
+                                            <span class="profile-status offline pull-right"></span>
+                                          </div>
+                                          <div class="mail-content">
+                                            <h5>Pawan kumar</h5>
+                                            <span class="mail-desc">Just see the my admin!</span>
+                                            <span class="time">9:00 AM</span>
+                                          </div>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>       
+               </ul>
+            </div>                                
+          </div> 
+        </mat-menu>
+
+      
+  
+ 
+
+        <button aria-haspopup="true" class="m-r-5 mat-icon-button"  [matMenuTriggerFor]="menu3" mat-icon-button="">
+            <span class="mat-button-wrapper">
+              <img alt="user" class="profile-pic" src="assets/img/users/3.jpg">
+            </span>
+            <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+            <div class="mat-button-focus-overlay"></div>
+         </button>
+         <mat-menu #menu3="matMenu" [overlapTrigger]="false">
+            <button mat-menu-item>
+            <mat-icon>settings</mat-icon>
+            <span>Setting</span>
+            </button>
+            <button mat-menu-item>
+            <mat-icon>account_box</mat-icon>
+            <span>Profile</span>
+            </button>
+            <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable notifications</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>exit_to_app</mat-icon>
+                <span>Sign Out</span>
+            </button>
+        </mat-menu>
+ 
+
+

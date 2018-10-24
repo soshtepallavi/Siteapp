@@ -1,0 +1,37 @@
+
+#snav {
+  box-shadow: 1px 0 20px rgba(0,0,0,.08) !important;
+  visibility: visible !important;
+}
+
+mat-toolbar .app-search {
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+}
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: initial !important;
+  height: calc(3.25rem + 20px);
+  border: 0;
+  line-height: 25px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+mat-toolbar .app-search .cl-srh-btn {
+  position: absolute;
+  top: 23px !important;
+  right: 15px;
+  font-size: 15px;
+  color: #67757c;
+  cursor: pointer;
+}
+.mat-button-ripple-round {
+  border-radius: 50%;
+  z-index: 1;
+}
+

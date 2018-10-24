@@ -1,0 +1,617 @@
+<div class="user-profile" style="background: url(assets/img/background/user.jpg) no-repeat;">
+    <div class="profile-img">
+      <img alt="user" src="assets/img/users/1.jpg">
+    </div>
+    <div class="profile-text" >
+        <a aria-haspopup="true" class="">Markarn Doe 
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+                <i class="fa fa-angle-down" style="font-size:24px"></i>
+            </button>
+        <mat-menu #menu="matMenu" >
+                <button mat-menu-item>
+                <mat-icon>settings</mat-icon>
+                <span>Setting</span>
+                </button>
+            <button mat-menu-item>
+                <mat-icon>account_box</mat-icon>
+                <span>Profile</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable notifications</span>
+            </button>
+            <button mat-menu-item>
+                    <mat-icon>exit_to_app</mat-icon>
+                    <span>Sign Out</span>
+            </button>
+        </mat-menu>
+        </a>
+    </div> 
+</div>
+
+<mat-nav-list appaccordion="" class="mat-nav-list" role="navigation">
+
+        <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+            <div class="mat-list-item-content">
+               <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+               <div class="mat-list-text"></div>
+               
+               <div class="saperator text-muted ng-star-inserted"><span>Personal</span></div>
+            </div>
+        </mat-list-item>
+      <mat-accordion>
+        <mat-expansion-panel>
+
+          <mat-expansion-panel-header>
+              <mat-panel-title>
+              <a appaccordiontoggle="" class="ng-star-inserted" href="javascript:;" style="flex-direction: row; box-sizing: border-box; display: flex;">
+                  <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true" >av_timer</mat-icon>
+                  <span *ngIf="!showSideBarlg" >Dashboards</span>  
+              </a>
+              </mat-panel-title> 
+          </mat-expansion-panel-header>
+    
+              <mat-list-item class="mat-list-item ng-star-inserted selected" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative selected" routerlinkactive="selected" href="#">Dashboard 1</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Dashboard 2</a>
+                 </div>
+              </mat-list-item>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                <a appaccordiontoggle="" class="ng-star-inserted" href="javascript:;" style="flex-direction: row; box-sizing: border-box; display: flex;">
+                    <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">bubble_chart</mat-icon>
+                    <span>Material Ui</span>  
+                    
+                  </a>
+                    
+            </mat-panel-title>
+            
+          </mat-expansion-panel-header>
+        
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Buttons</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Cards</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Grid List</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Lists</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Menu</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Tabs</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Stepper</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Expansion Panel</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Chips</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Toolbar</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Progress snipper</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Progress Bar</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Dialog</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Tooltip</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Snackbar</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Slider</a>
+                 </div>
+              </mat-list-item>
+              <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+                 <div class="mat-list-item-content">
+                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                    <div class="mat-list-text"></div>
+                    <a class="relative" routerlinkactive="selected" href="#">Slide Toggle</a>
+                 </div>
+              </mat-list-item>
+           
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                <a appaccordiontoggle="" class="ng-star-inserted" href="javascript:;" style="flex-direction: row; box-sizing: border-box; display: flex;">
+                    <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">apps</mat-icon>
+                    <span>Apps</span>  
+                </a>
+            </mat-panel-title>   
+          </mat-expansion-panel-header>
+          <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Calendar</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Mail box</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Chat</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Taskboard</a>
+              </div>
+           </mat-list-item>
+          </mat-expansion-panel>
+      
+
+
+
+    <mat-list-item appaccordionlink="" class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+       <div class="mat-list-item-content">
+          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+          <div class="mat-list-text"></div>
+          
+          <div class="saperator text-muted ng-star-inserted"><span>Forms, Table &amp; Widgets</span></div>
+       </div>
+    </mat-list-item>
+        <mat-expansion-panel>
+
+          <mat-expansion-panel-header>
+              <mat-panel-title>
+              <a appaccordiontoggle="" class="ng-star-inserted" href="javascript:;" style="flex-direction: row; box-sizing: border-box; display: flex;">
+                  <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">insert_drive_file</mat-icon>
+                  <span>Forms</span>  
+              </a>
+              </mat-panel-title> 
+          </mat-expansion-panel-header>
+    
+          <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Form-Layout</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Autocomplete</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Checkbox</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Radio Button</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Datepicker</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Form Field</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Inputs</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Tree</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Editor</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Form Validation</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">File Upload</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Wizard</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Paginator</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Sort Header</a>
+              </div>
+           </mat-list-item>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                <a appaccordiontoggle="" class="ng-star-inserted" href="javascript:;" style="flex-direction: row; box-sizing: border-box; display: flex;">
+                    <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">web</mat-icon>
+                    <span>Tables</span>  
+                </a>
+            </mat-panel-title>
+            
+          </mat-expansion-panel-header>
+        
+          <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Basic Table</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Filterable Table</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Pagination Table</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Sortable Table</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Mix Table</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Smart Table</a>
+              </div>
+           </mat-list-item>
+           
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                <a appaccordiontoggle="" class="ng-star-inserted" href="javascript:;" style="flex-direction: row; box-sizing: border-box; display: flex;">
+                    <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">border_all</mat-icon>
+                    <span>Data Tables</span>  
+                </a>
+            </mat-panel-title>   
+          </mat-expansion-panel-header>
+          <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Basic Data Table</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Filterable</a>
+              </div>
+           </mat-list-item>
+           <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+              <div class="mat-list-item-content">
+                 <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                 <div class="mat-list-text"></div>
+                 <a class="relative" routerlinkactive="selected" href="#">Editing</a>
+              </div>
+           </mat-list-item>
+          </mat-expansion-panel>
+ 
+          <mat-expansion-panel  hideToggle="true">
+          <mat-expansion-panel-header>
+          <mat-panel-title>
+        <a appaccordiontoggle="" class="ng-star-inserted" href="javascript:;" style="flex-direction: row; box-sizing: border-box; display: flex;">
+          <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">widgets</mat-icon>
+          <span>Widgets</span>  
+        </a>
+          </mat-panel-title>   
+          </mat-expansion-panel-header>
+
+          </mat-expansion-panel>
+
+          
+
+  
+
+    <mat-list-item appaccordionlink="" class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+       <div class="mat-list-item-content">
+          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+          <div class="mat-list-text"></div>
+        
+          <div class="saperator text-muted ng-star-inserted"><span>Extra Component</span></div>
+       </div>
+    </mat-list-item>
+
+
+    <mat-expansion-panel>
+
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+            <a appaccordiontoggle="" class="ng-star-inserted" href="javascript:;" style="flex-direction: row; box-sizing: border-box; display: flex;">
+                <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">perm_contact_calendar</mat-icon>
+                <span>Authentication</span>  
+            </a>
+            </mat-panel-title> 
+        </mat-expansion-panel-header>
+  
+        <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+            <div class="mat-list-item-content">
+               <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+               <div class="mat-list-text"></div>
+               <a class="relative" routerlinkactive="selected" href="#">Login</a>
+            </div>
+         </mat-list-item>
+         <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+            <div class="mat-list-item-content">
+               <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+               <div class="mat-list-text"></div>
+               <a class="relative" routerlinkactive="selected" href="#">Register</a>
+            </div>
+         </mat-list-item>
+         <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+            <div class="mat-list-item-content">
+               <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+               <div class="mat-list-text"></div>
+               <a class="relative" routerlinkactive="selected" href="#">Forgot</a>
+            </div>
+         </mat-list-item>
+         <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+            <div class="mat-list-item-content">
+               <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+               <div class="mat-list-text"></div>
+               <a class="relative" routerlinkactive="selected" href="#">Lockscreen</a>
+            </div>
+         </mat-list-item>
+         <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+            <div class="mat-list-item-content">
+               <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+               <div class="mat-list-text"></div>
+               <a class="relative" routerlinkactive="selected" href="#">Error</a>
+            </div>
+         </mat-list-item>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+              <a appaccordiontoggle="" class="ng-star-inserted" href="javascript:;" style="flex-direction: row; box-sizing: border-box; display: flex;" (click)="changeIcon('1')">
+                  <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">insert_chart</mat-icon>
+                  <span>Charts</span>  
+              </a>
+          </mat-panel-title>
+          
+        </mat-expansion-panel-header>
+      
+        <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+            <div class="mat-list-item-content">
+               <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+               <div class="mat-list-text"></div>
+               <a class="relative" routerlinkactive="selected" href="#">Chart Js</a>
+            </div>
+         </mat-list-item>
+         <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+            <div class="mat-list-item-content">
+               <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+               <div class="mat-list-text"></div>
+               <a class="relative" routerlinkactive="selected" href="#">Chartist Js</a>
+            </div>
+         </mat-list-item>
+         <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+            <div class="mat-list-item-content">
+               <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+               <div class="mat-list-text"></div>
+               <a class="relative" routerlinkactive="selected" href="#">Ngx Charts</a>
+            </div>
+         </mat-list-item>
+         
+      </mat-expansion-panel>
+
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                          (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+          <a appaccordiontoggle="" class="ng-star-inserted" href="javascript:;" style="flex-direction: row; box-sizing: border-box; display: flex;" (click)="changeIcon('1')">
+            <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">content_copy</mat-icon>
+          <span>Pages</span>  
+          </a>
+          </mat-panel-title>
+
+      </mat-expansion-panel-header>
+
+      <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+          <div class="mat-list-item-content">
+             <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+             <div class="mat-list-text"></div>
+             <a class="relative" routerlinkactive="selected" href="#">Material Icons</a>
+          </div>
+       </mat-list-item>
+       <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+          <div class="mat-list-item-content">
+             <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+             <div class="mat-list-text"></div>
+             <a class="relative" routerlinkactive="selected" href="#">Timeline</a>
+          </div>
+       </mat-list-item>
+       <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+          <div class="mat-list-item-content">
+             <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+             <div class="mat-list-text"></div>
+             <a class="relative" routerlinkactive="selected" href="#">Invoice</a>
+          </div>
+       </mat-list-item>
+       <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+          <div class="mat-list-item-content">
+             <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+             <div class="mat-list-text"></div>
+             <a class="relative" routerlinkactive="selected" href="#">Pricing</a>
+          </div>
+       </mat-list-item>
+       <mat-list-item class="mat-list-item ng-star-inserted" routerlinkactive="selected">
+          <div class="mat-list-item-content">
+             <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+             <div class="mat-list-text"></div>
+             <a class="relative" routerlinkactive="selected" href="#">Helper Classes</a>
+          </div>
+       </mat-list-item>
+        </mat-expansion-panel>
+      </mat-accordion>
+    
+</mat-nav-list>   
+ 

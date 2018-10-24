@@ -1,0 +1,35 @@
+<mat-card>
+    <mat-card-content>
+      <mat-card-title>Newsletter Campaign</mat-card-title>
+      <mat-card-subtitle>Overview of Newsletter Campaign</mat-card-subtitle>
+      <div class="linechart">
+          <canvas baseChart
+         
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [colors]="lineChartColors"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)">
+        </canvas>
+      </div>
+    <!-- </mat-card-content>  -->
+    <hr>
+    <!-- <mat-card-content  class="mat-card-content"> -->
+        <ul  class="list-inline text-center">
+          <li>
+            <h6  class="text-muted text-success m-0">
+              <i  class="fa fa-circle font-10 m-r-10 "></i>
+           Clicked
+            </h6>
+          </li>
+          <li>
+            <h6  class="text-muted  text-info  m-0">
+              <i  class="fa fa-circle font-10 m-r-10"></i> Sent
+            </h6>
+          </li>
+          </ul>
+    </mat-card-content> 
+  </mat-card>

@@ -1,0 +1,102 @@
+.fullpage{
+    background-image: url("/assets/login_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 900px;
+}
+
+.container{
+    height: 100%;
+    position: relative;
+  
+   
+}
+.col-md-4{
+  margin: 0 auto;
+}
+
+.card{
+    
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+    top: -90px;
+    -webkit-animation-name: card;
+    -moz-animation-name: card;
+    -o-animation-name: card;
+    animation-name: card;
+    -webkit-animation-duration: 600ms;
+    -moz-animation-duration: 600ms;
+    -o-animation-duration: 600ms;
+    animation-duration: 600ms;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @-webkit-keyframes card {
+    from {top: -40px;}
+    to {top: 0;}
+  }
+  
+  @keyframes card {
+    from {top: -40px;}
+    to {top: 0;}
+  }
+  
+  .card-header{
+    position: relative;
+    overflow: hidden;
+    top: -40px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 3px;
+    background: linear-gradient(60deg,#448AFF,#2979FF);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(130, 177, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-header h3{
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  
+
+  
+  .form-row, .card-form, .mat-form-field{
+    width: 100%;
+  }
+  
+  .card-form{
+    padding: 5px;
+  }
+  
+  .form-row{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+  }
+  
+
+  .card-footer{
+    margin: 10px;
+    /* background-color: white; */
+  }
+  
+  .card-footer button{
+    color: #2979FF;
+    
+  }
+  button:hover{
+      background-color: #90CAF9;
+  }
+  
