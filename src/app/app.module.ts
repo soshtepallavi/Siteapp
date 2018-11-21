@@ -21,11 +21,12 @@ import { LinechartComponent } from './dashboard/content/linechart/linechart.comp
 import { SettingbarComponent } from './dashboard/settingbar/settingbar.component';
 import { HeaderComponent } from './dashboard/header/header.component';
 import { NgStickyDirective } from 'ng-sticky';
-import { ScrollbarModule } from 'ngx-scrollbar';
+// import { ScrollbarModule } from 'ngx-scrollbar';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { FormsModule } from '@angular/forms';
 import { ToastrModule} from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
 const appRoutes:Routes = [{
   path: '',
   component: LoginComponent
@@ -50,6 +51,7 @@ const appRoutes:Routes = [{
     SettingbarComponent,
     HeaderComponent,
     NgStickyDirective
+  
   ],
   imports: [
     BrowserModule,
@@ -81,8 +83,9 @@ const appRoutes:Routes = [{
     ChartsModule,
     MatSlideToggleModule,
     MatDividerModule,
-    ScrollbarModule,
+    // ScrollbarModule,
     OverlayModule,
+    HttpClientModule,
     ToastrModule.forRoot()
     
 
